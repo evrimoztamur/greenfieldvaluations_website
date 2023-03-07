@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenfield Valuations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bs-font-sans-serif:
+                "IBM Plex Sans",
+                system-ui,
+                -apple-system,
+                "Segoe UI",
+                Roboto,
+                "Helvetica Neue",
+                "Noto Sans",
+                "Liberation Sans",
+                Arial,
+                sans-serif,
+                "Apple Color Emoji",
+                "Segoe UI Emoji",
+                "Segoe UI Symbol",
+                "Noto Color Emoji";
+        }
+
+        .text-bg-brand {
+            color: #fff !important;
+            background-color: #112b00;
+        }
+
+        .andermatt {
+            background-image: url(michael_day_andermatt.jpg);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: #776 !important;
+        }
+
+        .andermatt .display-2 {
+            margin-top: -.5rem;
+            line-height: .8;
+        }
+
+        .text-brand-inverse {
+            color: #e2dbe3 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="gfval" viewBox="0 0 331 25">
+            <g fill="#e2dbe3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                aria-label="Greenfield Valuations">
+                <path
+                    d="M10.16 25c3.23 0 5.7-2.18 6.1-3.58h.23l1.95 3.2h1.76v-9.16h1.64v-2.1h-9.96v2.1h3.2v3.01c0 2.27-1.34 3.97-4.35 3.97-3.04 0-4.83-2.05-4.83-5.89v-6.11c0-4.16 1.92-6.11 5.76-6.11 3.04 0 4.35 1.44 4.35 3.65v1.4h3.71v-7.1h-3.7v1.86h-.2C15.28 3.1 13.55 1.9 10.6 1.9 4.88 1.9.2 5.96.2 13.48.2 20.62 4.33 25 10.16 25zM24.52 24.62h9.35V22.5H31.3v-9.47c0-1.37 1.37-3.07 2.72-3.07.13 0 .19 0 .29.03l.03.16c-.29.13-.55.61-.55 1.12 0 1.15.84 2.11 2.37 2.11 1.63 0 2.56-1.05 2.56-2.75 0-1.95-1.28-3.17-3.36-3.17-2.11 0-3.45 1.41-4.03 3.17h-.13V7.46l-6.69 1.38v1.82l1.92.42V22.5h-1.92zM48.52 25c4.23 0 6.37-2.62 7.1-4.74l-1.75-1.05c-.58 1.47-2.02 2.69-4.29 2.69-2.46 0-4.1-1.48-4.1-4.32V16.3h10.53v-1.1c0-4.73-3-7.74-7.77-7.74s-7.9 3.33-7.9 8.74c0 5.12 2.94 8.8 8.18 8.8zm-3.04-11.17c0-3.07 1.06-4.16 2.76-4.16 1.7 0 2.75 1.09 2.75 4.16v.45h-5.5zM66.64 25c4.22 0 6.36-2.62 7.1-4.74l-1.76-1.05c-.58 1.47-2.02 2.69-4.29 2.69-2.46 0-4.1-1.48-4.1-4.32V16.3h10.53v-1.1c0-4.73-3-7.74-7.77-7.74s-7.9 3.33-7.9 8.74c0 5.12 2.94 8.8 8.19 8.8zM63.6 13.83c0-3.07 1.05-4.16 2.75-4.16s2.75 1.09 2.75 4.16v.45h-5.5zM76.52 24.62h8.55V22.5H83.3v-9.3c0-1.77 1.5-2.5 2.97-2.5 1.86 0 2.6.9 2.6 3.13v8.67h-1.76v2.12h8.54V22.5h-1.92v-8.83c0-4.13-1.5-6.2-5.6-6.2-2.69 0-4.16 1.47-4.77 3.16h-.16V7.46l-6.69 1.38v1.82l1.92.42V22.5h-1.92zM97.7 24.62h8.58V22.5h-1.79V10.1h5.54V22.5h-1.8v2.12h8.58V22.5h-1.92V7.46l-4.13.39h-6.27v-.58c0-3.61 1.06-5.18 3.87-5.18.61 0 1.16.06 1.64.13v.22c-.32.1-.84.58-.84 1.57 0 1.21.8 2.14 2.34 2.14 1.5 0 2.4-.96 2.4-2.37 0-2.2-2.05-3.48-6.14-3.48-4.87 0-8.13 2.56-8.13 7v.55H97.7v2.24h1.92V22.5H97.7zM127.05 25c4.23 0 6.37-2.62 7.1-4.74l-1.75-1.05c-.58 1.47-2.02 2.69-4.3 2.69-2.46 0-4.09-1.48-4.09-4.32V16.3h10.53v-1.1c0-4.73-3-7.74-7.78-7.74-4.76 0-7.9 3.33-7.9 8.74 0 5.12 2.94 8.8 8.2 8.8zm-3.04-11.17c0-3.07 1.06-4.16 2.75-4.16 1.7 0 2.76 1.09 2.76 4.16v.45h-5.5zM136.62 24.62h8.7V22.5h-1.92V.3l-6.78 1.37V3.5l1.92.41v18.6h-1.92zM154.19 25c2.3 0 3.87-1.38 4.45-2.88h.16V25l6.78-1.38V21.8l-1.92-.42V.3l-6.78 1.37V3.5l1.92.41v6.37h-.16a4.57 4.57 0 0 0-4.45-2.82c-4.1 0-6.66 3.5-6.66 8.77 0 5.28 2.56 8.77 6.66 8.77zm1.63-2.94c-1.76 0-3.14-1.28-3.14-3.65v-4.39c0-2.36 1.38-3.64 3.14-3.64 1.7 0 2.98 1.18 2.98 2.94v5.8a2.85 2.85 0 0 1-2.98 2.94z"
+                    font-weight="700"
+                    style="-inkscape-font-specification:&quot;IBM Plex Serif Bold&quot;;text-align:start" />
+                <path
+                    d="M183.08 24.62h2.76l6.88-20.87h1.7V2.28h-6.5v1.47h2.88l-3.14 9.89-2.6 8.22h-.12l-2.53-8.19-3.3-9.92H182V2.28h-7.5v1.47h1.7zM199.5 25c2.94 0 4.22-1.38 4.83-2.82h.16v.23c0 1.57.93 2.59 2.6 2.59a4 4 0 0 0 2.27-.64v-1.12h-2.4v-10.4c0-3.23-2.05-5.12-5.5-5.12-3.85 0-6.09 1.8-6.09 3.65 0 1.21.74 1.85 1.76 1.85 1.06 0 1.76-.64 1.76-1.76 0-.92-.54-1.4-1.02-1.66v-.06c.57-.36 1.6-.55 2.69-.55 2.5 0 3.77 1.44 3.77 4.03v2.44h-2.37c-5.4 0-7.36 1.7-7.36 4.86 0 2.75 1.86 4.48 4.9 4.48zm1.12-1.76c-1.98 0-3.17-.86-3.17-2.5v-.67c0-2.01 1.12-3.13 4.8-3.13h2.08v3.1c0 2.14-1.66 3.2-3.71 3.2zM211.6 24.62h7.36v-1.48h-2.37V.3l-5 .92v1.12l2.37.42v20.38h-2.36zM228.97 25c2.6 0 4.23-1.57 4.74-2.88h.13V25l4.92-.96v-1.09l-2.36-.41V7.72l-5 .96v1.09l2.37.41v9.73c0 2.21-1.98 3.27-3.87 3.27-2.62 0-3.87-1.5-3.87-4.64V7.72l-5 .96v1.09l2.37.41v8.58c0 4.16 1.6 6.24 5.57 6.24zM246.38 25c2.94 0 4.22-1.38 4.83-2.82h.16v.23c0 1.57.93 2.59 2.6 2.59a4 4 0 0 0 2.27-.64v-1.12h-2.4v-10.4c0-3.23-2.05-5.12-5.5-5.12-3.85 0-6.09 1.8-6.09 3.65 0 1.21.74 1.85 1.76 1.85 1.06 0 1.76-.64 1.76-1.76 0-.92-.54-1.4-1.02-1.66v-.06c.57-.36 1.6-.55 2.69-.55 2.5 0 3.77 1.44 3.77 4.03v2.44h-2.37c-5.4 0-7.36 1.7-7.36 4.86 0 2.75 1.86 4.48 4.9 4.48zm1.12-1.76c-1.98 0-3.17-.86-3.17-2.5v-.67c0-2.01 1.12-3.13 4.8-3.13h2.08v3.1c0 2.14-1.66 3.2-3.71 3.2zM263.5 24.8c1.47 0 3.17-.31 3.9-.7v-1.05h-4.25V9.67h4.25V8.1h-4.25V3.82h-1.44l-.74 2.84c-.25.96-.51 1.44-2.27 1.44h-.29v1.57h2.11v12.1c0 2.2.7 3.04 2.98 3.04zM273.61 4.3c1.09 0 1.73-.77 1.73-1.7v-.16c0-.93-.64-1.7-1.73-1.7-1.09 0-1.7.77-1.7 1.7v.16c0 .93.61 1.7 1.7 1.7zm-3.68 20.32h7.36v-1.48h-2.37V7.72l-4.99.96v1.09l2.37.41v12.96h-2.37zM287.44 23.43c-3.2 0-4.61-2.3-4.61-5.34v-3.46c0-3.04 1.4-5.34 4.6-5.34 3.2 0 4.61 2.3 4.61 5.34v3.46c0 3.04-1.4 5.34-4.6 5.34zm0 1.57c4.54 0 7.58-3.4 7.58-8.64 0-5.25-3.04-8.64-7.58-8.64-4.55 0-7.59 3.4-7.59 8.64 0 5.25 3.04 8.64 7.59 8.64zM298.06 24.62h7.36v-1.48h-2.37V12.81c0-2.21 2.02-3.27 3.87-3.27 2.63 0 3.88 1.5 3.88 4.61v9h-2.37v1.47h7.36v-1.48h-2.37v-9.21c0-4.13-1.6-6.21-5.57-6.21a4.98 4.98 0 0 0-4.73 2.88h-.13V7.72l-4.93.96v1.09l2.37.41v12.96h-2.37zM324.97 25c3.65 0 5.83-2.11 5.83-4.83 0-2.82-1.67-4.32-4.93-5l-1.8-.38c-1.69-.38-2.75-1.4-2.75-2.91 0-1.76 1.28-2.6 3.46-2.6 2.43 0 3.58.87 3.58 2.57v1.21h1.92V8.1h-1.92v1.35h-.12c-.42-1.03-1.8-1.73-3.81-1.73-3.36 0-5.54 1.76-5.54 4.64 0 2.78 1.63 4.38 4.77 5.06l1.92.41c1.76.39 2.72 1.38 2.72 2.85 0 1.92-1.4 2.75-3.84 2.75-2.62 0-3.71-1.28-3.71-3.1v-.67h-1.92v4.96h1.92v-1.64h.13c.48 1.03 2.08 2.02 4.1 2.02z" />
+            </g>
+        </symbol>
+        <symbol id="linkedin" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+            <path d="M8 11l0 5"></path>
+            <path d="M8 8l0 .01"></path>
+            <path d="M12 16l0 -5"></path>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+        </symbol>
+        <symbol id="mail" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+            <path d="M3 7l9 6l9 -6"></path>
+        </symbol>
+    </svg>
+    <header class="p-4 text-bg-brand">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
+                <div class="d-flex flex-fill align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-white text-decoration-none">
+                        <svg class="me-2 img-fluid" width="331" height="25" role="img"
+                            aria-label="Greenfield Valuations">
+                            <use xlink:href="#gfval"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div
+                    class="d-flex flex-fill align-items-center justify-content-center justify-content-lg-end ms-lg-auto">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-sm-4">Team</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-sm-4">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-bg-warning ms-sm-4 px-sm-4">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-4 m-md-5 andermatt rounded">
+            <div class="col-lg-10 p-lg-5 mx-auto my-5">
+                <h2 class="display-4 fw-bold text-brand-inverse">We value</h2>
+                <h1 class="display-2 fw-bold text-white">growing companies</h1>
+            </div>
+        </div>
+        <div class="position-relative overflow-hidden p-2 p-md-4 m-4 m-md-5 text-bg-brand rounded">
+            <h1 class="ms-4 display-5 my-3">Team</h1>
+            <div class="row">
+                <div class="d-flex col-lg-4">
+                    <div class="row g-0 m-3 border rounded overflow-hidden flex-lg-row position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-warning">Partner</strong>
+                            <h3 class="mb-3">Arjan Bisseling</h3>
+                            <p class="card-text mb-auto">Arjan is a tax advisor and partner at AsjesBisseling with prior
+                                experience in PwC.</p>
+                        </div>
+                        <div class="d-flex col-12 mt-auto align-items-center justify-content-center bg-white">
+                            <img src="arjan-1-300x300.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex col-lg-4">
+                    <div class="row g-0 m-3 border rounded overflow-hidden flex-lg-row position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-warning">Partner</strong>
+                            <h3 class="mb-3">Sven Kempers</h3>
+                            <p class="mb-auto">Sven is an investment manager for life sciences and med-tech at Oost NL
+                                Capital.</p>
+                        </div>
+                        <div class="d-flex col-12 mt-auto align-items-center justify-content-center bg-white">
+                            <img src="sven-1-300x300.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex col-lg-4">
+                    <div class="row g-0 m-3 border rounded overflow-hidden flex-lg-row position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-white">Valuation specialist</strong>
+                            <h3 class="mb-3">Evrim Öztamur</h3>
+                            <p class="mb-auto">Evrim is a valuation analyst specialised in high-growth technology and
+                                bio-tech firm valuations.</p>
+                        </div>
+                        <div class="d-flex col-12 mt-auto align-items-center justify-content-center bg-white">
+                            <img src="evrim-1-300x300.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative overflow-hidden p-2 p-md-4 m-4 m-md-5 text-bg-brand rounded">
+            <div class="col-xl-9 col-lg-10 mx-lg-auto">
+                <h1 class="ms-4 display-5 my-3">Services</h1>
+                <div class="row">
+                    <div class="d-flex col-lg-6">
+                        <div class="row g-0 m-3 text-bg-light rounded overflow-hidden flex-lg-row position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <!-- <strong class="d-inline-block mb-2 text-warning">Partner</strong> -->
+                                <h3 class="mb-3">Tax valuations and forecasts</h3>
+                                <p class="card-text">Valuations for tax purposes are important during the key events
+                                    (e.g. investment rounds) in the journey towards an exit. In these situations,
+                                    compensating important
+                                    members of your team can become a crucial part of your success.</p>
+                                <p class="card-text">Greenfield Valuations has the
+                                    experience and expertise to assist growth companies in determining the value at
+                                    these key events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex col-lg-6">
+                        <div class="row g-0 m-3 text-bg-light rounded overflow-hidden flex-lg-row position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <!-- <strong class="d-inline-block mb-2 text-warning">Partner</strong> -->
+                                <h3 class="mb-3">DCF valuations</h3>
+                                <p class="card-text">Based on the company's financials, we prepare pre-money discounted
+                                    cash flow analyses to determine the enterprise and equity value of the company.</p>
+                                <p class="card-text">Our tailored solutions help you make informed decisions about
+                                    financing and equity compensation plans, while also reducing income taxes due.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex col-lg-6">
+                        <div class="row g-0 m-3 text-bg-light rounded overflow-hidden flex-lg-row position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <!-- <strong class="d-inline-block mb-2 text-white">Valuation specialist</strong> -->
+                                <h3 class="mb-3">Scenario analyses</h3>
+                                <p class="card-text">Based on the management's expectations regarding the exit value of
+                                    the company, we construct a scenario analysis to determine the net present value
+                                    (NPV) of the specific class of shares in question.</p>
+                                <p class="card-text">We use predictive models to
+                                    assess the value of your business and develop a detailed financial projection for
+                                    future cash flows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex col-lg-6">
+                        <div class="row g-0 m-3 text-bg-light rounded overflow-hidden flex-lg-row position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <!-- <strong class="d-inline-block mb-2 text-white">Valuation specialist</strong> -->
+                                <h3 class="mb-3">Captables</h3>
+                                <p class="card-text">Captables paint a complete picture of your company's current
+                                    equity distribution and include relevant details such as the number and ratio of
+                                    shares issued, when dividends have been paid, and who owns options or warrants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="p-4 text-bg-brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 mb-5 m-lg-0">
+                    <svg class="mb-3 img-fluid" width="331" height="25" role="img" aria-label="Greenfield Valuations">
+                        <use xlink:href="#gfval"></use>
+                    </svg>
+                    <p>Keizersgracht 477E<br>1017 DL, Amsterdam<br>The Netherlands</p>
+                    <div class="d-flex">
+                        <a href="https://www.linkedin.com/" class="text-white">
+                            <svg class="me-2 img-fluid" width="48" height="48" role="img">
+                                <use xlink:href="#mail"></use>
+                            </svg></a>
+                        <a href="https://www.linkedin.com/" class="text-white">
+                            <svg class="me-2 img-fluid" width="48" height="48" role="img">
+                                <use xlink:href="#linkedin"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
